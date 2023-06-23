@@ -95,10 +95,10 @@
 * `following-sibling`   – сестринский элемент, расположенный после (ниже) указанного.
 
 ## Примеры:
-> teg = t
-> atribute = atr
-> заголовок = Z
-> текст = T
+* teg = t
+* atribute = atr
+* заголовок = Z
+* текст = T
 
 * `//t[@atr='Z']`
 * `//t[@atr='Z'][@atr='Z'] or t[@atr='xxx' and @atr='Z']`
