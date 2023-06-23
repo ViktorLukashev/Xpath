@@ -79,10 +79,7 @@
 * `mod`	Остаток от деления	`5 mod 2`
 
 ## Полезное
-teg = t
-atribute = atr
-заголовок = Z
-текст = T
+
 * `contains` -- содержит (atr, 'T' // пробел)
 * `not contains` -- не содержит 
 * `/` - следующий тег
@@ -98,27 +95,30 @@ atribute = atr
 * `following-sibling`   –   сестринский   элемент,   расположенный   после (ниже) указанного.
 
 ## Примеры:
-`//t[@atr='Z']`
-`//t[@atr='Z'][@atr='Z'] or t[@atr='xxx' and @atr='Z']`
-`//t[contains(@atr, 'T')]`
-`//t[contains(@atr, 'T')][contains(@, 'T')]`
-`//t[contains(@atr, 'T')][contains(@, 'T')]`
-`//t[contains(@atr, 'T')][not(contains(@, 'T'))]`
-`//t[@art='T']/t2` - спустится по дереву вниз (t2 - ребенок t)
-`//t[@atr='Z']/ancestor::t3` - подняться по дереву вверх (t3 - родитель t)
-`//t[@atr='T']/../..t2[not(@t3='T3')]`
-`//t[@atr='T1'] or @atr='T2' or @atr='T3'` - коллекция по атрибуту
-`//t[@atr='T']//t2[last()]` - последний элемент из коллекции `//t[@atr='T']//t2`
+> teg = t
+> atribute = atr
+> заголовок = Z
+> текст = T
 
-`//t[@atr='T']//t2[last()-1]` - пред последний элемент из коллекции //t[@atr='T']//t2
-`//t[@atr!=T]` - найдем элемент который не атрибут не равен тексту(например 5) либо <,> <= и тд
-`//t[@atr>=T and @atr<=T2]`
-`//t[text()='T']`
-`//t[contains(text(), 'частьT')]`
-`//t[contains(text(), 'частьT')][not(conteins(text(),'T2'))]`
-`//*[@atr='T']`
-
-`//teg[@atr='T'][contains(@, 'T')]`
+* `//t[@atr='Z']`
+* `//t[@atr='Z'][@atr='Z'] or t[@atr='xxx' and @atr='Z']`
+* `//t[contains(@atr, 'T')]`
+* `//t[contains(@atr, 'T')][contains(@, 'T')]`
+* `//t[contains(@atr, 'T')][contains(@, 'T')]`
+* `//t[contains(@atr, 'T')][not(contains(@, 'T'))]`
+* `//t[@art='T']/t2` - спустится по дереву вниз (t2 - ребенок t)
+* `//t[@atr='Z']/ancestor::t3` - подняться по дереву вверх (t3 - родитель t)
+* `//t[@atr='T']/../..t2[not(@t3='T3')]`
+* `//t[@atr='T1'] or @atr='T2' or @atr='T3'` - коллекция по атрибуту
+* `//t[@atr='T']//t2[last()]` - последний элемент из коллекции `//t[@atr='T']//t2`
+* `//t[@atr='T']//t2[last()-1]` - пред последний элемент из коллекции //t[@atr='T']//t2
+* `//t[@atr!=T]` - найдем элемент который не атрибут не равен тексту(например 5) либо <,> <= и тд
+* `//t[@atr>=T and @atr<=T2]`
+* `//t[text()='T']`
+* `//t[contains(text(), 'частьT')]`
+* `//t[contains(text(), 'частьT')][not(conteins(text(),'T2'))]`
+* `//*[@atr='T']`
+* `//teg[@atr='T'][contains(@, 'T')]`
 
 ### XPath еще
 
